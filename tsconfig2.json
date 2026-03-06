@@ -1,0 +1,18 @@
+{
+  /* 编译特性的ts文件，y也可以放入.d.ts文件 */
+  "files":["src/app/function.ts"],
+  /* 可以写*匹配 */
+  "include": [],
+  /* 哪些文件不包含在内 */
+  "exclude": ["node_modules"],
+  /* 编译配置 */
+  "compileOptions":{
+    /* 编译出来的文件放在哪里 */
+    "outDir":"dist",
+    /* 编译出的module是什么类型 */
+    "module":"esnext",
+    "target":"es5",
+    /* 每个js文件都会生成对应的.d.ts文件 */
+    "declaration":true
+  }
+}
